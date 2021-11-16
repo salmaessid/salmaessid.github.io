@@ -15,7 +15,22 @@
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
 
+  <style type="text/css">
+  .video-responsive { 
+overflow:hidden; 
+padding-bottom:56.25%; 
+position:relative; 
+height:0;
+}
 
+.video-responsive iframe {
+left:0; 
+top:0; 
+height:100%;
+width:100%;
+position:absolute;
+}
+</style>
 
   <title>Salma Essid Portfolio</title>  
 
@@ -84,9 +99,9 @@
 
 
   <br>
-  <video id="video" controls autoplay style="max-height: 450px; margin-left: 150px;" muted>
-    <source src="./assets/designproduit/workshop/vidéo.mp4" type="video/mp4">
-</video> 
+ <div class="video-responsive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ECmBxheIjOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <div class="hero-full-wrapper">
   <br>
 <div class="row">
@@ -98,7 +113,7 @@ Ce travail de sélection de l’existant nous a permis de définir les processus
 En parallèle, il a fallu repenser le dessein du moule à clé en plâtre pour qu’il puisse fonctionner sur la machine à rotomoulage. Il faut savoir que pour être fonctionnel, un moule en plâtre destiné aux tirages de cire de synthèse doit faire une certaine épaisseur (question de résistance) et doit être entièrement imbibé d’eau avant chaque utilisation (forte incidence sur le poids du moule). Néanmoins, pour un usage prolongé de la machine à rotomoulage, il est préférable d’y incorporer un moule en plâtre le plus léger possible. C’est à la croisée de ces contraintes que nous avons pensé le nouveau moule à clé, en réduisant autant que possible l’épaisseur du moule, mais en gardant suffisamment de matière pour qu’il puisse faire son travail d’absorption sans se casser sous la pression.</p>
     </div>
     <div class="col-md-6">
-  <img class="img-responsive" alt="" src="./assets/designproduit/workshop/4.jpg" style="max-height: 720px; margin-left: 100px">
+  <img class="img-responsive" alt="" src="./assets/designproduit/workshop/4.jpg" style="max-height: 720px; margin-left: 1px">
     </div>
 </div>
 <br>

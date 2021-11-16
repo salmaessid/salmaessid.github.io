@@ -15,7 +15,22 @@
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
 
+<style type="text/css">
+  .video-responsive { 
+overflow:hidden; 
+padding-bottom:56.25%; 
+position:relative; 
+height:0;
+}
 
+.video-responsive iframe {
+left:0; 
+top:0; 
+height:100%;
+width:100%;
+position:absolute;
+}
+</style>
 
   <title>Salma Essid Portfolio</title>  
 
@@ -80,9 +95,9 @@
 <h1 style="">Rebellion</h1>
 </div>
 <div class="col-md-4">
-<a href="./assets/designproduit/rebellion/rapport.pdf" class="btn btn-info btn-lg"><p>Voir rapport de PFE</p>
+<a href="./assets/designproduit/rebellion/rapport.pdf" class="btn btn-info btn-lg">Voir rapport de PFE
 </a>
-<a href="./assets/designproduit/rebellion/presentation.pdf" class="btn btn-info btn-lg" style="margin-top: 20px;"><p>Voir présentation de PFE</p>
+<a href="./assets/designproduit/rebellion/presentation.pdf" class="btn btn-info btn-lg" style="margin-top: 20px;">Voir présentation de PFE
 </a>
 </div>
 </div>
@@ -99,11 +114,11 @@ Elle est dépourvue du ressort qui lui permet de la ramener à sa position initi
 <div class="hero-full-wrapper">
 
 
-  <img class="img-responsive" src="./assets/designproduit/rebellion/2.jpg" style="max-width: 600px; margin-left: 270px;margin-bottom: 20px;">
+  <img class="img-responsive" src="./assets/designproduit/rebellion/2.jpg">
 
   <div class="row">
     <div class="col-md-6">
-  <img class="img-responsive" alt="" src="./assets/designproduit/rebellion/1.jpg" style="max-width: 550px">
+  <img class="img-responsive" alt="" src="./assets/designproduit/rebellion/1.jpg">
     </div>
     <div class="col-md-6">
   <img class="img-responsive" alt="" src="./assets/designproduit/rebellion/3.jpg">
@@ -125,9 +140,21 @@ Elle est dépourvue du ressort qui lui permet de la ramener à sa position initi
     </div>
   </div>
 <br>
-  <video controls autoplay muted style="max-height: 500px; margin-left: 100px;">
+<div class="row">
+
+<div class="video-responsive">
+<iframe width="560" height="315" src="./assets/designproduit/rebellion/video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!--
+  <div class="col-md-8">
+  <video class="video-responsive" controls autoplay muted>
     <source src="./assets/designproduit/rebellion/video.mp4" type="video/mp4">
 </video> 
+</div>-->
+
+</div>
+
+
 <br>
   <div class="row">
     <div class="col-md-6" style="margin-top: 50px">
@@ -282,6 +309,8 @@ Elle est dépourvue du ressort qui lui permet de la ramener à sa position initi
      masonryBuild();
   });
 </script>
+
+
 
 </main>
 

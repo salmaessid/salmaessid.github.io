@@ -14,7 +14,22 @@
   
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
+<style type="text/css">
+  .video-responsive { 
+overflow:hidden; 
+padding-bottom:56.25%; 
+position:relative; 
+height:0;
+}
 
+.video-responsive iframe {
+left:0; 
+top:0; 
+height:100%;
+width:100%;
+position:absolute;
+}
+</style>
 
 
   <title>Projet de recherche</title>  
@@ -105,10 +120,12 @@ Cet artisan tel qu’on le rencontrait il y a peu, n’existe plus, ou presque p
     <div class="section-container-spacer">
       <div class="row">
         <div class="col-xs-12 col-md-7">
-      <p>
+         <div class="video-responsive">
+<iframe width="560" height="315" src="./assets/recherche/9.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
       <!--<img class="img-responsive" alt="" src="./assets/recherche/1.png" style="">-->
-       <video controls autoplay muted loop style="max-width: 380px; max-height: 600px; margin-left: 150px;">
-    <source src="./assets/recherche/9.mp4" type="video/mp4">
+       <!--<video controls autoplay muted loop style="max-width: 380px; max-height: 600px; margin-left: 150px;">
+    <source src="./assets/recherche/9.mp4" type="video/mp4">-->
 </video>  
       </p>
         </div>
@@ -161,9 +178,7 @@ aujourd’hui avec l’émergence de process de fabrication numérique et le dé
           <div class="col-xs-12 col-md-6">
               <p style="color: gray"><img class="img-responsive" alt="" src="./assets/recherche/10.JPEG"><strong>#Impression PLA</strong></p>
           </div>
-
       </div>
-      
     </div>
 
     <!--<p> Duis aute irure dolor in reprehenderit in voluptate velit esse
